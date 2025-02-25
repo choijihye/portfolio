@@ -1,0 +1,53 @@
+@charset "UTF-8";
+@import 'base/variables';
+@import './main.scss';
+
+/* Header */
+.header-wrap {
+  z-index: 12;
+  position: sticky;
+  top: 0;
+  width: 100%;
+
+  > div {
+    background: $white;
+  }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 8px 0;
+    max-width: 1680px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    font-size: 24px;
+    font-weight: 500;
+
+    .header-left-area {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .header-right-area {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+
+      li {
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        font-family: 'Montserrat';
+        position: relative;
+        overflow: hidden;
+        color: $primary-navy-09;
+        width: fit-content;
+        height: fit-content;
+      }
+    }
+  }
+}
